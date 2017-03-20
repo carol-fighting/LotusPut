@@ -1,3 +1,10 @@
+- [稳定匹配高考录取](http://www.cssn.cn/jyx/jyx_jyqy/201604/t20160429_2989269.shtml)
+- [稳定匹配伪代码](http://www.cnblogs.com/jostree/p/4051286.html)
+- [基于流调度代价的数据中心网络拥塞控制路由算法](http://www.dylw.net/jisuanjiwangluo/181622.html)
+- [http://cdmd.cnki.com.cn/Article/CDMD-10217-1011021195.htm](http://cdmd.cnki.com.cn/Article/CDMD-10217-1011021195.htm)
+
+---
+
 - [数据中心网络的研究进展与趋势](http://cjc.ict.ac.cn/bfpub/DCN-9.pdf)
 - [Varys笔记](http://binwu.net/%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/2015/04/22/Efficient-Coflow-Scheduling-with-Varys/)
 - [关于coflow调度的论文们](https://github.com/weiwang1206/BlogSource/blob/master/source/_posts/flow-schedule-1.md)
