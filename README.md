@@ -1,33 +1,13 @@
----
-- 04月01日(周六PM)#大路第一节
-- 04月03日(周一PM)#大路第二节
-
----
-- 04月16日(周日PM)#大路第三节
-
----
-- 04月18日(周二AM)#大路第四节#工作日
-- 04月19日(周三AM)#大路第五节#工作日
-- 04月20日(周四AM)#电子第一节#工作日
-- 04月22日(周六AM)#电子第二节
-- 04月23日(周日AM)#电子第三节
-
----
-- 04月24日(周一AM)-电子第四节#工作日
-- 04月25日(周二AM)-电子第五节#工作日
-
-
 
 ---
 - [稳定匹配高考录取](http://www.cssn.cn/jyx/jyx_jyqy/201604/t20160429_2989269.shtml)
 - [稳定匹配伪代码](http://www.cnblogs.com/jostree/p/4051286.html)
 - [基于流调度代价的数据中心网络拥塞控制路由算法](http://www.dylw.net/jisuanjiwangluo/181622.html)
-- [http://cdmd.cnki.com.cn/Article/CDMD-10217-1011021195.htm](http://cdmd.cnki.com.cn/Article/CDMD-10217-1011021195.htm)
 
 ---
 
 - [数据中心网络的研究进展与趋势](http://cjc.ict.ac.cn/bfpub/DCN-9.pdf)
-- [Varys笔记](http://binwu.net/%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/2015/04/22/Efficient-Coflow-Scheduling-with-Varys/)
+- [Varys-笔记](http://binwu.net/%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/2015/04/22/Efficient-Coflow-Scheduling-with-Varys/)
 - [关于coflow调度的论文们](https://github.com/weiwang1206/BlogSource/blob/master/source/_posts/flow-schedule-1.md)
 - [对等体间动态带宽调整和交易的系统](http://www.google.st/patents/CN101513004B?cl=zh)
 - [网络架构介绍](https://muyuatcisco.wordpress.com/2016/02/20/%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%8F%AF%E6%89%A9%E5%B1%95%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84-02192016/)
@@ -36,20 +16,6 @@
 - [Explicat path项目](http://sing.cse.ust.hk/projects/XPath)
 - [973项目合集](http://bigdata.act.buaa.edu.cn/css/973%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%A1%B9%E7%9B%AE%E7%AE%80%E6%8A%A5%E7%AC%AC%E5%85%AB%E6%9C%9F-201701.pdf)
 - [coflow在GitHub](https://github.com/byronyi/coflow)
-
----
-- [南大2016分数](http://passnju.com/Item-9053.aspx)
-
-
----
-- [诗凡黎积分](http://weirenwu.ews.m.jaeapp.com/pc/task/list?seller_nick=%E8%AF%97%E5%87%A1%E9%BB%8E%E5%AE%98%E6%96%B9%E6%97%97%E8%88%B0%E5%BA%97)
-
----
-
-- [中南复试](http://gra.its.csu.edu.cn/yjsy/pygl/wjtzxq50446_1_2.html) 
-- [中南科目](http://law.csu.edu.cn/Content.aspx?moduleid=310EEA43-1D38-4762-91C9-65276C921E72&id=790c41d9-9ea9-43ec-83f1-281416b5dd88)
-
-
 
 ---
 - [idea主题](http://color-themes.com/?view=index)
