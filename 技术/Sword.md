@@ -42,6 +42,7 @@
 
 ----------
 # 数组的乘积
+---
 
     //1、定义
     left[i]=nums[0]*nums[1]*nums[i-1];
@@ -55,6 +56,7 @@
 ----------
 
 #找重复[0,len-1]
+---
     public boolean isDup(int []nums){
         for(int i=0;i<len;i++){  
             while(nums[i]!=i){  
@@ -68,6 +70,7 @@
 
 
 #滑动窗口最大值
+---
 
 	public List maxInWindows(int [] num, int size){
 		ArrayList ansList=new ArrayList<>();
@@ -93,7 +96,7 @@
 
 
 #中序遍历next
-
+---
 
 
     public TreeNode getNext(TreeNode node){
@@ -120,6 +123,7 @@
 	
 ----------
 #链表去重
+---
     public void deleteDepulication(ListNode head){
 		if(head==null){return;}
 		ListNode curr=head;ListNode pre=null;
@@ -149,6 +153,7 @@
 
 ----------
 #能否顺子
+---
     //把大王、小王看成0
     public boolean isContinuous(int []nums){
 		int len=5;
@@ -178,6 +183,7 @@
 
 ----------
 #n个骰子点数和
+---
 
 	int minV=6;
 	
@@ -245,6 +251,7 @@
 	
 ----------
 #排序数组次数
+---
 
     public int getFirstIndex(int target,int []nums,int start,int end){
 		if(start>end){return -1;}
@@ -280,6 +287,7 @@
 	
 ----------
 #数组的逆序对
+---
 
 	public int doFind(int []nums,int[]temp,int start,int end){
 		if(start==end){temp[start]=nums[start];return 0;}
@@ -310,6 +318,7 @@
 	
 ----------
 #1-n中1的次数
+---
 
 	public int doCount(char []nums,int start){
 		if(nums==null||nums.length==0||start==nums.length){return 0;}
@@ -335,6 +344,7 @@
 
 
 #字符串排列
+---
 
     public void getPerm(char []nums){
 		if(nums==null||nums.length==0){return;}
@@ -355,6 +365,7 @@
 	
 ----------
 #复杂链表复制
+---
     public void step1(ComplexNode root){
         ComplexNode w=root;
         while(w!=null){
@@ -394,6 +405,7 @@
 
 ----------
 #和为target的路径
+---
    
     public void findPath(TreeNode root,int curr,int target,Stack<Integer>stack){
         curr+=root.val;
@@ -410,6 +422,7 @@
 
 ----------
 #二叉搜索树的后序
+---
 
     public boolean isSquence (int []nums,int start,int step){
         if(nums==null||nums.length==0){return false;}
@@ -429,6 +442,7 @@
     
 ----------
 #是否栈的弹出
+---
     public boolean isPopOrder(int []nums1,int []nums2,int len){
         if(nums1==null||nums2==null||len==0){return ans;}
         Stack<Integer> stack=new Stack<Integer>();
@@ -450,6 +464,7 @@
 
 ----------
 #二叉树镜像
+---
     public void doMirror(TreeNode root){
         if(root==null){return ;}
         if(root.left==null && root.right==null){return;}
@@ -462,6 +477,7 @@
     
 ----------
 #树的子结构
+---
      public boolean isSubTree(TreeNode rootA,TreeNode rootB){
         boolean ans=false;int target=rootB.val;
         if(rootA!=null &&rootB!=null){
@@ -480,7 +496,7 @@
     
 ----------
 #合并排序链表
-
+---
     public ListNode Merge(ListNode p1,ListNode p2){
         if(p1==null){return p2;}
         if(p2==null){return p1;}
@@ -528,6 +544,7 @@
     
 ----------
 #调整数组可扩展性
+---
     interface MyObject{
         public isLeftPart(int []nums,int index);
     }
@@ -546,6 +563,7 @@
 
 ----------
 #1到最大的n位数
+---
     public void doMax(int []nums,int len,int index){
         if(index==len-1){print(nums);return;}
         for(int i=0;i<10;i++){
@@ -562,6 +580,7 @@
     
 ----------
 #数值的整数次方
+---
     boolean state=true;
     public double Power(dobule b,int e){
         if(e<0&&isEqual(0.0,b)){
@@ -587,6 +606,7 @@
 
 ----------
 #二进制中1的个数
+---
 
     public int getNumberOne(int n){
         int ans=0;
@@ -609,6 +629,7 @@
     
 ----------
 #斐波那契
+---
     public int getFibonacci(int n){
         int nums[2]={0,1};
         if(n<2){return nums[n];}
@@ -623,6 +644,7 @@
 
 ----------
 #旋转数组的最小
+---
 
     public int findMin(int []nums){
 		int len=nums.length();

@@ -175,34 +175,35 @@
 
 
    
-    	public boolean isMatched(String p,String s){
-    		if(s==null||p==null){
-    			if(s==null&&p==null){return true;}
-    			return false;
-    		}
-    		int i=p.length()-1;int j=j.length()-1;
-    		return dfs(p,s,i,j);
-    	}
-    	
-    	public boolean  dfs(String s,String p,int i,int j){
-    		if(i<0||j<0){
-    			if(i<0&&j<0){return true;}
-    			return false;
-    		}
-    		
-    		if(p.charAt(i)=='?'||p.charAt(i)==s.charAt(j)){return dfs(s,p,i-1,j-1);}
+	public boolean isMatched(String p,String s){
+		if(s==null||p==null){
+			if(s==null&&p==null){return true;}
+			return false;
+		}
+		int i=p.length()-1;int j=j.length()-1;
+		return dfs(p,s,i,j);
+	}
+	
+	public boolean  dfs(String s,String p,int i,int j){
+		if(i<0||j<0){
+			if(i<0&&j<0){return true;}
+			return false;
+		}
+		
+		if(p.charAt(i)=='?'||p.charAt(i)==s.charAt(j)){return dfs(s,p,i-1,j-1);}
 
-    		if(p.charAt(i)=='*'){
-    		    int t=j;
-    			while(t>=0){
-    				if(dfs(s,p,i-1,t--)==true){return true;}
-    			}
-    			return false;
-    		}
-    		return false;
-    	}
+		if(p.charAt(i)=='*'){
+		    int t=j;
+			while(t>=0){
+				if(dfs(s,p,i-1,t--)==true){return true;}
+			}
+			return false;
+		}
+		return false;
+	}
     
 #通配符迭代  
+---
 
     public boolean isMatch(String p,String s){
                 //start=i,在s中位置为match
@@ -234,6 +235,7 @@
     
 ----------
 #拉票和复习
+---
 	public int[] getWork(int [][]time,int total){
 		int []nums=new int[len];
 		for(int i=0;i<len;i++){
@@ -247,6 +249,7 @@
 
 ----------
 #二维数组查找
+---
    
 	public boolean canFind(int [][]nums,int target){
 		int m=nums.length;int n=nums[0].length;
@@ -262,6 +265,7 @@
     
 ----------
 #连续最大和
+---
 	public int MaxContinue(int []nums){
 		int ans=0;
 		int currMax=0;
@@ -274,6 +278,7 @@
 
 ----------
 #整数倒置
+---
     public int reverse(int n){
         if(n==Integer.MIN_VALUE){
 			return 0;
@@ -293,6 +298,7 @@
 
 ----------
 # N皇后
+---
 	public void putQueenIndex(int index){
 		int r=index;
 		for (int c= 0;c<len; c++){

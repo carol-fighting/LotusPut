@@ -1,4 +1,5 @@
 #排序树恢复
+---
     public void doAdjust(int []nums){
         int first=-1;int second=-1;
         for(int i=1;i<len;i++){
@@ -23,6 +24,7 @@
     
 ----------
 #搜索转双中序
+---
 
     public static TreeNode ActNode(TreeNode root, TreeNode lastNode){
     	if (root == null){return root;}
@@ -36,6 +38,7 @@
     
 ----------
 #前-中确定树
+---
 	public TreeNode constructTree(int []preNums,int []inNums,int len){
 		if(preNums==null||inNums==null||len==0){return null;}
 		return doConstruct(preNums,0,len-1,inNUms,0,len-1);
@@ -75,6 +78,7 @@
 
 
 # 头插法
+---
 	public ListNode reverse(ListNode root){
 		ListNode head=new ListNode(0);
 		head.next=null;
@@ -95,6 +99,7 @@
       
 ----------
 #正反序列化
+---
     public TreeNode deserialize(String data) {
         if (data==null||data.length()==0){
             return null;
@@ -127,6 +132,7 @@
     
 ----------
 # 层次遍历
+---
     public static ArrayList<ArrayList<Integer>> everyLevel(TreeNode root){
     	ArrayList<ArrayList<Integer>> finalAns = new ArrayList<ArrayList<Integer>>();
     	if (root == null){
@@ -162,6 +168,7 @@
 
 ----------
 # 前中后序
+---
 	public static void preOrder(TreeNode root){
 		if(root==null){
 		    return ;
@@ -193,6 +200,7 @@
 ----------
 
 # 是否存在环
+---
 
     public Node hasCircle(Node head){
         Node fast=head;
@@ -220,7 +228,7 @@
 
 ----------
 # 二分搜索
-
+---
 
     public int binarySearch(int []nums,int target,int left,int right){
     	if(left>right){
@@ -241,6 +249,7 @@
 
 ----------
 # 归并排序
+---
     public void mSort(int[] nums, int left, int right){
     	if (left < right){
     		int middle = (left + right) / 2;
@@ -278,6 +287,7 @@
 ----------
 
 # 快速排序
+---
 
     public void qSort(int[] nums, int left, int right){
     	if (left < right){
@@ -305,6 +315,7 @@
 
 ----------
 #冒泡插入
+---
 	public void bSort(int[] nums){
     	for (int i = 0; i < nums.length; i++){
     		for (int j = 0; j < nums.length - 1 - i; j++){
@@ -330,6 +341,7 @@
     
 ----------
 #堆排序
+----
 	public void heapSort(int[] nums){
     	buildHeap(nums);
         for (int i=0; i<nums.length; i++){

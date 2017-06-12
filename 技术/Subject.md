@@ -1,4 +1,5 @@
 # 容器装最多
+---
 
     
 	public int getMaxArea(int []nums){
@@ -29,6 +30,7 @@
 
 
 # 贪心算法
+---
 
     public int loadOnbackPack(Scanner sc){
 		int [][]dp=new int [N][Capa];
@@ -58,6 +60,7 @@
 
 ----------
 #课程规划
+---
     
     public int[] findOrder(int len,int[][] nums) {
         int[] ansNums = new int[len];
@@ -104,7 +107,7 @@
 
 ----------
 #回文
-
+---
    
 	public static final int NO=0;
 	public static final int YES=1;
@@ -145,7 +148,7 @@
 
 ----------
 #回文分区
- 
+ ---
     	
 	public void dfs(int start,String str,int[][]dp,ArrayList<String>tempList,ArrayList<ArrayList<String>>finalAns){
 		int len=str.length();
@@ -167,6 +170,7 @@
 
 ----------
 #LCS
+---
 
  	public int cacuLongest(int []nums){
 		int len=nums.length; 
@@ -197,7 +201,7 @@
 
 ----------
 # 全排列 
-
+---
   
 	public void generateBigger(int []nums){
 		int right=len-1;int left=right-1;
@@ -226,7 +230,7 @@
 
 
 # N对圆括号
-   
+---   
 	public List<String> genrate(int n){
 		List<String> ansList=new ArrayList<String>();
 		if(n<=0){return ansList;}
@@ -244,6 +248,7 @@
 ----------
 
 # BFS-最小替换
+---
 - hit->log [hot,dot,dog,lot,log]
 - hit->hot->dot->dog->log 长度为5
 
