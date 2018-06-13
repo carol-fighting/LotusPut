@@ -1,0 +1,20 @@
+{
+    "Class 001": { "Xiao Wang": { "Gender": "Male", "Age": "18", "Interest": "Football", "Hometown": "Shanghai" }, "Xiao Li": { "Gender": "Male", "Age": "20", "Interest": "Basketball", "Hometown": "Beijing" } },
+    "Class 002": {
+        "Xiao Cai": {
+            "Gender": "Female",
+            "Age": "19",
+            "Interest": "Dance",
+            "Hometown": "Gaoxiong"
+        }
+    },
+    "Class 003": { "Xiao Ma": { "Gender": "Male", "Age": "18", "Interest": "Reading", "Hometown": "Taibei" } },
+    "Class 005": {
+        "Xiao Zhang": {
+            "Gender": "Male",
+            "Age": "20",
+            "Interest": "Running",
+            "Hometown": "Guangzhou"
+        }
+    }
+}
