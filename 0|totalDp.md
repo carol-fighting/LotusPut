@@ -65,3 +65,30 @@ class Solution {
     }
 }
 ```
+
+```
+//3|053|Maximum Subarray
+public class Solution {
+    public static void main(String[] args) {
+        int[] a = {-2, -3, 4, -1, -2, 1, 5, -3};
+        System.out.println("Maximum contiguous sum is " + new Solution().maxSubArraySum(a));
+    }
+
+    int maxSubArraySum(int nums[]) {
+        Integer len = nums.length;
+        Integer globalTarget = Integer.MIN_VALUE;
+        Integer maxEndHere = 0;
+
+        for (int i = 0; i < len; i++) {
+            maxEndHere = maxEndHere + nums[i];
+            if (maxEndHere > globalTarget) {
+                globalTarget = maxEndHere;
+            }
+            if (maxEndHere < 0) {
+                maxEndHere = 0;
+            }
+        }
+        return globalTarget;
+    }
+}
+```
