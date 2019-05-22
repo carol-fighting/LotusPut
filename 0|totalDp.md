@@ -92,3 +92,27 @@ class Solution {
     }
 }
 ```
+
+```
+//4|062|Unique Paths
+class Solution {
+
+    public static void main(String[] args) {
+        System.out.println("the kind of unique path is " + new Solution().uniquePaths(5,4));
+    }
+    
+    public int uniquePaths(int m, int n) {
+        int[] dp = new int[n];
+        for (int j = 0; j < dp.length; j++) {
+            dp[j] = 1;
+        }
+
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp[j] = dp[j] + dp[j - 1];
+            }
+        }
+        return dp[n - 1];
+    }
+}
+```
