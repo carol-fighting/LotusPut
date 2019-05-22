@@ -68,13 +68,13 @@ class Solution {
 
 ```
 //3|053|Maximum Subarray
-public class Solution {
+class Solution {
     public static void main(String[] args) {
         int[] a = {-2, -3, 4, -1, -2, 1, 5, -3};
-        System.out.println("Maximum contiguous sum is " + new Solution().maxSubArraySum(a));
+        System.out.println("Maximum contiguous sum is " + new Solution().maxSubArray(a));
     }
 
-    int maxSubArraySum(int nums[]) {
+    public int maxSubArray(int nums[]) {
         Integer len = nums.length;
         Integer globalTarget = Integer.MIN_VALUE;
         Integer maxEndHere = 0;
