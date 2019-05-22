@@ -8,7 +8,6 @@ class Solution {
         int value = new Solution().minFallingPathSum(A);
         System.out.println(value);
     }
-
     public int minFallingPathSum(int[][] A) {
         int n = A.length;
         int[][] dp = new int[n][n];
@@ -43,12 +42,10 @@ class Solution {
 ```
 //2|799|champagne-tower
 class Solution {
-
     public static void main(String[] args) {
         double value = new Solution().champagneTower(3, 100, 100);
         System.out.println(value);
     }
-
     public double champagneTower(int poured, int query_row, int query_glass) {
         double[][] dp = new double[101][101];
         dp[0][0] = poured;
@@ -73,7 +70,6 @@ class Solution {
         int[] a = {-2, -3, 4, -1, -2, 1, 5, -3};
         System.out.println("Maximum contiguous sum is " + new Solution().maxSubArray(a));
     }
-
     public int maxSubArray(int nums[]) {
         Integer len = nums.length;
         Integer globalTarget = Integer.MIN_VALUE;
@@ -96,11 +92,9 @@ class Solution {
 ```
 //4|062|Unique Paths
 class Solution {
-
     public static void main(String[] args) {
         System.out.println("the kind of unique path is " + new Solution().uniquePaths(5,4));
     }
-    
     public int uniquePaths(int m, int n) {
         int[] dp = new int[n];
         for (int j = 0; j < dp.length; j++) {
