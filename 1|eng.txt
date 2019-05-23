@@ -1,0 +1,7 @@
+I didn’t feel Typescript added substantial value and even worse, 
+we noticed that our coding speed was reduced. 
+With Typescript things that were really easy to do on Javascript 
+like defining a simple object were more complicated to do on Typescript. 
+I highly recommend you to read the following articles before you start using Typescript. 
+It is not the right solution for everyone.
+
