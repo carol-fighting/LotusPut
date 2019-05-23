@@ -1,13 +1,7 @@
-931 Minimum Falling Path Sum
-799 champagne-tower
-053 Maximum Subarray
-062 Unique Paths
-063 Unique Paths II
-064 Minimum Path Sum
-070 Climbing Stairs
-
-072 Edit Distance
-087 Scramble String
+1|072|Edit Distance
+  
+2|087|Scramble String 
+  https://leetcode.com/problems/scramble-string/
 091 Decode Ways
 097 Interleaving String
 115 Distinct Subsequences
