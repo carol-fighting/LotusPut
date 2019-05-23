@@ -1,19 +1,17 @@
-1|072|Edit Distance
-  https://leetcode.com/problems/edit-distance/
-2|087|Scramble String 
-  https://leetcode.com/problems/scramble-string/
-091 Decode Ways
-097 Interleaving String
-115 Distinct Subsequences
-139 Word Break
-140 Word Break II
+1|072|Edit Distance     https://leetcode.com/problems/edit-distance/
+2|087|Scramble String   https://leetcode.com/problems/scramble-string/
+3|091|Decode Ways       https://leetcode.com/problems/decode-ways/
+4|097|Interleaving String       https://leetcode.com/problems/interleaving-string/
+5|115|Distinct Subsequences     https://leetcode.com/problems/distinct-subsequences/
+6|139|Word Break        https://leetcode.com/problems/word-break/
+7|140|Word Break II     https://leetcode.com/problems/word-break-ii/
 
-120 Triangle
-152 Maximum Product Subarray
-174 Dungeon Game
-198 House Robber
-213 House Robber II
-221 Maximal Square
-712 Minimum ASCII Delete Sum for Two Strings
-718 Maximum Length of Repeated Subarray
-818 Race Car
+1|120|Triangle      https://leetcode.com/problems/triangle/
+2|152|Maximum Product Subarray      https://leetcode.com/problems/maximum-product-subarray/
+3|174|Dungeon Game          https://leetcode.com/problems/dungeon-game/
+4|198|House Robber          https://leetcode.com/problems/house-robber/
+5|213|House Robber II       https://leetcode.com/problems/house-robber-ii/
+6|221|Maximal Square        https://leetcode.com/problems/maximal-square/
+7|712|Minimum ASCII Delete Sum for Two Strings      https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
+8|718|Maximum Length of Repeated Subarray   https://leetcode.com/problems/maximum-length-of-repeated-subarray/
+9|018|Race Car      https://leetcode.com/problems/race-car/
