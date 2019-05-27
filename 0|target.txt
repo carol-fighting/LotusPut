@@ -1,4 +1,13 @@
-1|072|Edit Distance     https://leetcode.com/problems/edit-distance/
+1|072|Edit Distance     
+//https://leetcode.com/problems/edit-distance/
+//Given two words word1 and word2
+//find the minimum number of steps required to convert word1 to word2
+//dp[i][j]表示从word1前i个字符转换到word2前j个字符最少的步骤数
+//在word1插入y， 那么dp[i][j] = dp[i][j-1] + 1
+//在word1删除x， 那么dp[i][j] = dp[i-1][j] + 1
+//把word1中的x用y来替换，那么dp[i][j] = dp[i-1][j-1] + 1
+//https://www.cnblogs.com/springfor/p/3896167.html
+
 2|087|Scramble String   https://leetcode.com/problems/scramble-string/
 3|091|Decode Ways       https://leetcode.com/problems/decode-ways/
 4|097|Interleaving String       https://leetcode.com/problems/interleaving-string/
