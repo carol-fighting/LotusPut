@@ -45,7 +45,50 @@ class Solution {
     }
 }
 
-2|087|Scramble String   https://leetcode.com/problems/scramble-string/
+2|087|Scramble String   
+//https://leetcode.com/problems/scramble-string/
+//假如把一个字符串当做一个二叉树的根，然后它的非空子字符串是它的子节点，
+//然后交换某个子字符串的两个子节点，重新爬行回去形成一个新的字符串，
+//这个新字符串和原来的字符串互为爬行字符串。
+import java.util.Arrays;
+class Solution {
+    public static void main(String[] args) {
+        System.out.println(new Solution().isScramble("abc", "bac"));
+    }
+    public boolean isScramble(String s1, String s2) {
+        if (s1.length() == 0 || s1.equals(s2)) {
+            return true;
+        }
+        if (s1.length() != s2.length()) {
+            return false;
+        }
+        char[] arr1 = s1.toCharArray();
+        char[] arr2 = s2.toCharArray();
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        if(!new String(arr1).equals(new String(arr2))){
+            return false;
+        }
+        for(int i=1; i<s1.length(); i++){
+            String a = s1.substring(0, i);
+            String b = s1.substring(i, s1.length());
+
+            String c = s2.substring(0, i);
+            String d = s2.substring(i, s2.length());
+
+            String e = s2.substring(0, s2.length()-i);
+            String f = s2.substring(s2.length()-i, s2.length());
+
+            if(isScramble(a, c) && isScramble(b, d))
+                return true;
+            if(isScramble(a, f) && isScramble(b, e))
+                return true;
+        }
+
+        return false;
+    }
+}
+
 3|091|Decode Ways       https://leetcode.com/problems/decode-ways/
 4|097|Interleaving String       https://leetcode.com/problems/interleaving-string/
 5|115|Distinct Subsequences     https://leetcode.com/problems/distinct-subsequences/
