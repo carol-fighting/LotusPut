@@ -124,7 +124,46 @@ class Solution {
     }
 
 }
-4|097|Interleaving String       https://leetcode.com/problems/interleaving-string/
+4|097|Interleaving String       
+//https://leetcode.com/problems/interleaving-string/
+//s1 = "aabcc",s2 = "dbbca"
+//When s3 = "aadbbcbcac", return true. 
+//When s3 = "aadbbbaccc", return false.
+//大体思路是，s1取一部分s2取一部分，最后是否能匹配s3。
+//动态规划数组是dp[i][j]，表示：s1取前i位，s2取前j位，是否能组成s3的前i+j位。
+//初始化是，假设s1为空，那么s2每一位跟s3匹配放入dp[0][j]
+//假设s2为空，那么s1每一位跟s3匹配放入dp[i][0]。
+class Solution {
+    public static void main(String[] args) {
+        System.out.println(new Solution().isInterleave("ab", "bc", "acbb"));
+    }
+    public boolean isInterleave(String s1, String s2, String s3) {
+        if (s3.length() != s1.length() + s2.length()) {
+            return false;
+        }
+        boolean[][] dp = new boolean[s1.length() + 1][s2.length() + 1];
+        dp[0][0] = true;
+
+        for (int i = 1; i <= s1.length() && s1.charAt(i - 1) == s3.charAt(i - 1); i++) {
+            dp[i][0] = true;
+        }
+        for (int i = 1; i <= s2.length() && s2.charAt(i - 1) == s3.charAt(i - 1); i++) {
+            dp[0][i] = true;
+        }
+        for (int i = 1; i <= s1.length(); i++) {
+            for (int j = 1; j <= s2.length(); j++) {
+                char c = s3.charAt(i + j - 1);
+                if (c == s1.charAt(i - 1) && dp[i - 1][j]) {
+                    dp[i][j] = true;
+                }
+                if (c == s2.charAt(j - 1) && dp[i][j - 1]) {
+                    dp[i][j] = true;
+                }
+            }
+        }
+        return dp[s1.length()][s2.length()];
+    }
+}
 5|115|Distinct Subsequences     https://leetcode.com/problems/distinct-subsequences/
 6|139|Word Break        https://leetcode.com/problems/word-break/
 7|140|Word Break II     https://leetcode.com/problems/word-break-ii/
